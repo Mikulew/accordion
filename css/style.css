@@ -1,0 +1,47 @@
+.accordion__title {
+    height: 50px;
+    padding: 0 20px;
+    margin-top: 5px;
+    border: 2px #ececec solid;
+    position: relative;
+    cursor: pointer;
+    font-family: "Dosis", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.accordion__title:after {
+    content: "X";
+    display: inline-block;
+    width: 50px;
+    height: 100%;
+    background-color: #ececec;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-rendering: auto;
+}
+
+.accordion__title--active {
+    border-color: #d5d022;
+    background-color: #d5d022;
+    color: #ffffff;
+}
+
+.accordion__title--active:after {
+    background-color: #d5d560;
+    color: #ffffff;
+}
+
+.accordion__text {
+    padding: 20px;
+    border: 2px #ececec solid;
+    font-size: 14px;
+    line-height: 24px;
+}
+
